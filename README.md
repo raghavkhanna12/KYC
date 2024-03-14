@@ -12,7 +12,7 @@
 
 <h3 align="center">Installation 🛠👨‍🔧👨‍🔧</h3>
 <p>To install and run this project on your local machine, follow these steps:-</p>
-1. Clone the repository using <code> git clone </code> <br>
+1. Clone the repository using <code>https://github.com/raghavkhanna12/KYC.git</code> <br>
 2. Run the tool using <code>python app.py</code>. <br> 
 
 

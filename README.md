@@ -8,6 +8,10 @@
 -> Extracts personal information such as name, Aadhar number, gender, date of birth, etc. from Aadhar cards. <br> 
 -> Easy to use interface. <br> 
 </p>
+<h3 align="center">Demo Video</h3>
+<p>https://drive.google.com/file/d/10LLE3lWJ-GJ1mE-9048DoZkyx_iZwqbr/view?usp=sharing</p>
+
+
 
 
 <h3 align="center">Installation 🛠👨‍🔧👨‍🔧</h3>

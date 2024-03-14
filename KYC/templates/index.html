@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online KYC</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online KYC</h1> <!-- Added heading -->
+    <div class="content-wrapper">
+      <div class="video-wrapper">
+        <video id="video" autoplay></video>
+        
+        <canvas id="canvas" style="display:none;"></canvas>
+      </div>
+      <div class="text-wrapper">
+        <p id="instruction-text">Click your photo</p>
+        <button id="capture-btn">Capture Photo</button>
+      </div>
+    </div>
+  </div>
+  <script src="../static/script.js"></script>
+
+  <!-- Script for text-to-speech -->
+  <script>
+    function speak(text) {
+      var utterance = new SpeechSynthesisUtterance(text);
+      speechSynthesis.speak(utterance);
+    }
+
+    var canSpeakSecondInstruction = false;
+
+    // Function to speak the first instruction after 2 seconds
+    setTimeout(function() {
+      speak("Please face the camera in a bright and well-lit room.");
+      canSpeakSecondInstruction = true; // Allow speaking the second instruction after the first one has been spoken
+    }, 2000);
+
+    // Function to speak the second instruction when the capture button is clicked
+    document.getElementById('capture-btn').addEventListener('click', function() {
+      if (canSpeakSecondInstruction) {
+        speak("Please display your Aadhaar card in the webcam.");
+        canSpeakSecondInstruction = false; // Prevent speaking the second instruction again
+      }
+    });
+
+    // Show the capture button after 2 seconds
+    setTimeout(function() {
+      document.getElementById('capture-btn').style.display = 'block';
+    }, 2000);
+  </script>
+</body>
+</html>

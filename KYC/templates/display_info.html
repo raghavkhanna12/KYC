@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Information</title>
+  <style>
+    body {
+      background-color: #333; /* Dark background color */
+      color: #fff; /* Text color */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a suitable font */
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Make sure the form is centered vertically */
+    }
+
+    div {
+      width: 60%;
+    }
+
+    form {
+      background-color: #444; /* Darker background color for the form */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Add a subtle box shadow */
+    }
+
+    label {
+      display: inline-block; /* Ensure labels and inputs are on the same line */
+      width: 30%; /* Set label width */
+      margin-bottom: 5px;
+    }
+
+    input,
+    select {
+      width: 65%; /* Set input width */
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Style the dropdown */
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 8px;
+      cursor: pointer;
+      background-color: #fff; /* Darker dropdown background color */
+      color: #555; /* Dropdown text color */
+      border: 1px solid #777; /* Darker border color */
+      border-radius: 5px;
+    }
+
+    /* Style for the submit button */
+    button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+    h1 {
+      text-align: center;
+      color: #fff; /* Text color for the heading */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <form>
+      <h1>Verify Your Details</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="{{ captured_info.name }}" readonly><br><br>
+      <label for="dob">Date of Birth:</label>
+      <input type="text" id="dob" name="dob" value="{{ captured_info.dob }}" readonly><br><br>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender" value="{{ captured_info.gender }}" readonly><br><br>
+      <label for="aadhaar">Aadhaar Number:</label>
+      <input type="text" id="aadhaar" name="aadhaar" value="{{ captured_info.aadhaar_number }}" readonly><br><br>
+
+      <!-- Dropdown for Income Range -->
+      <label for="income">Income Range:</label>
+      <select id="income" name="income">
+        <option value="0-50000">0 - 50,000</option>
+        <option value="50001-100000">50,001 - 100,000</option>
+        <option value="100001-150000">100,001 - 150,000</option>
+        <!-- Add more options as needed -->
+      </select><br><br>
+
+      <!-- Dropdown for Occupation Type -->
+      <label for="occupation">Occupation Type:</label>
+      <select id="occupation" name="occupation">
+        <option value="Blue Collar">Blue Collar</option>
+        <option value="White Collar">White Collar</option>
+        <option value="Professional">Professional</option>
+        <option value="Red Collar">Red Collar</option>
+        <option value="Service">Service</option>
+      </select><br><br>
+
+      <!-- Textfield for Additional User Data -->
+      <label for="userData">Addres:</label>
+      <input type="text" id="userData" name="userData"><br><br>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="location.href='/last.html'">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  font-family: Arial, sans-serif; /* Specify a font */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 100px;
+}
+
+.content-wrapper {
+  display: flex; /* Use flexbox for layout */
+}
+
+.video-wrapper {
+  flex: 1; /* Take up remaining space */
+}
+
+.video-wrapper video {
+  width: 100%; /* Ensure video fills its container */
+}
+
+.text-wrapper {
+  flex: 1; /* Take up remaining space */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  flex-direction: column;
+}
+/* Video styling */
+/* Video styling with rounded edges */
+#video {
+  width: 100%; /* Ensure the video fills its container */
+  border-radius: 10px; /* Add rounded edges */
+  overflow: hidden; /* Hide any content that overflows the rounded edges */
+}
+
+/* Text styling */
+#instruction-text {
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Add some top margin */
+  font-size: x-large;
+}
+
+/* Button styling */
+#capture-btn {
+  display: block; /* Ensure button is displayed as a block element */
+  margin: 20px auto; /* Center the button horizontally with some top margin */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add cursor pointer on hover */
+  border-radius: 5px; /* Add border radius */
+}
+
+#capture-btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

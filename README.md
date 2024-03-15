@@ -1,6 +1,6 @@
 
 <h1 align="center">Online KYC Portal👩‍💻👨‍💻</h1>
-<p align="center">This KYC portal tool to extract personal information from Aadhar cards. The project aims to automate the process of KYC via data extraction from Aadhar cards, which are Indian identification cards that contain personal information such as name, Aadhar number, gender, date of birth, etc.</p>
+<p align="left">This KYC portal tool to extract personal information from Aadhar cards. The project aims to automate the process of KYC via data extraction from Aadhar cards, which are Indian identification cards that contain personal information such as name, Aadhar number, gender, date of birth, etc.</p>
 
 
 <h2 align="center">Features👨‍🎨</h2>
